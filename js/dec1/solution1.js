@@ -26,7 +26,7 @@ const parseInputString = (string) => {
 
 const dataFile = fs.readFileSync("./data.txt");
 const dataArray = dataFile.toString().split("\n")
-const result = 0;
+var result = 0;
 dataArray.forEach(entry => result += parseInputString(entry))
 console.log(result)
 
